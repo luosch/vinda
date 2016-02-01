@@ -1,11 +1,11 @@
-similar_text
+vinda
 ============
 
-.. image:: https://img.shields.io/pypi/v/similar_text.svg
-    :target: https://pypi.python.org/pypi/similar_text
+.. image:: https://img.shields.io/pypi/v/vinda.svg
+    :target: https://pypi.python.org/pypi/vinda
 
-.. image:: https://img.shields.io/pypi/dm/similar_text.svg
-        :target: https://pypi.python.org/pypi/similar_text.svg
+.. image:: https://img.shields.io/pypi/dm/vinda.svg
+        :target: https://pypi.python.org/pypi/vinda.svg
 
 :code:`vinda` can help users construct their index pages rapidly
 
