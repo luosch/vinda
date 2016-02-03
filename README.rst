@@ -7,7 +7,7 @@ vinda
 .. image:: https://img.shields.io/pypi/dm/vinda.svg
         :target: https://pypi.python.org/pypi/vinda.svg
 
-:code:`vinda` can help users construct their index pages rapidly
+:code:`vinda` can help user construct their index pages rapidly
 
 Installation
 ------------

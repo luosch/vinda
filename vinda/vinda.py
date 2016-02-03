@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 import os
-import jinjia2
+from jinja2 import Environment, FileSystemLoader
 
 
 def get_size(start_path = '.'):
@@ -25,32 +25,19 @@ def format_size(raw_size):
         return 'lagrer than 1TB'
 
 
-def look(path='.', ignore=[], output='vinda.html'):
-    ignore = set(ignore)
-    ignore.add('.')
-    ignore.add('..')
-    if isinstance(output, str) or isinstance(output, unicode):
-        head = '<head><meta charset="utf-8"></head>'
-        link_tag = '<a href="{href}">{name}</a>'
-        content = []
-        with open(output, mode='w') as f:
-            for name in os.listdir(path):
-                full_path = os.path.join(path, name)
-                print 'dealing', full_path
-                if name not in ignore and os.path.isdir(full_path):
-                    raw_size = get_size(full_path)
-                    content.append(link_tag.format(
-                        href=name + '/',
-                        name=name,
-                        size=format_size(raw_size)
-                    ))
-                if name not in ignore and os.path.isfile(full_path):
-                    raw_size = os.path.getsize(full_path)
-                    content.append(link_tag.format(
-                        href=name,
-                        name=name,
-                        size=format_size(raw_size)
-                    ))
-            f.write(head + '<br>'.join(content))
-    else:
-        pass
+def look(root_path='.', output_path='vinda.html', ignore_list=[]):
+    env = Environment(loader=FileSystemLoader(os.path.join(os.path.dirname(__file__))))
+    template = env.get_template('template.html')
+    
+    link = []
+    for name in os.listdir(root_path):
+        full_path = os.path.join(root_path, name)
+        print 'vinda is dealing', full_path
+
+        if name not in ignore_list and os.path.isdir(full_path):
+            link.append({'href': name + '/', 'name': name})
+        if name not in ignore_list and os.path.isfile(full_path):
+            link.append({'href': name, 'name': name})
+
+    with open(output_path, mode='w') as f:
+        f.write(template.render(link=link))

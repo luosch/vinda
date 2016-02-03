@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>vinda</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #f1f2f3;
+        }
+        .main {
+            width: 70%;
+            margin: 10% auto;
+        }
+        .list-group-item {
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+            margin-bottom: -1px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            color: #555;
+        }
+        a.list-group-item {
+            color: #555;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="list-group main">
+        {% for item in link %}
+            <a href="{{ item.href }}" class="list-group-item">{{ item.name }}</a>
+        {% endfor %}
+    </div>
 </body>
 </html>

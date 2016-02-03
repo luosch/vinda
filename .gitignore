@@ -63,3 +63,7 @@ target/
 
 # OSX
 .DS_Store
+
+# test
+./*.html
+
