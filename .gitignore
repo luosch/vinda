@@ -65,5 +65,6 @@ target/
 .DS_Store
 
 # test
-./*.html
+index.html
+vinda.html
 

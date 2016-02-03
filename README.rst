@@ -34,18 +34,16 @@ Screenshots
 .. image:: https://raw.githubusercontent.com/luosch/vinda/master/screenshots/index.png
 
 
-Change log
-==========
-
-version 0.1.0 (2016.02.03)
+Version 0.1.0 (2016.02.03)
 --------------------------
 
 *   Use Jinja2 to constuct index page
 *   Only Supporting traverse in current path
 
+
 Lincense
-========
+--------
 
-All source code is licensed under the `MIT License`_.
+All source code is licensed under the `Hyde starter kit`_.
 
-.. _MIT License https://raw.githubusercontent.com/luosch/vinda/master/LICENSE
+.. _MIT License: https://raw.githubusercontent.com/luosch/vinda/master/LICENSE
