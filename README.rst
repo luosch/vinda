@@ -40,6 +40,10 @@ Version 0.1.0 (2016.02.03)
 *   Use Jinja2 to constuct index page
 *   Only Supporting traverse in current path
 
+Version 0.2.0 (2016.02.03)
+--------------------------
+
+*   fix bug -> `template.html` missing 
 
 Lincense
 --------

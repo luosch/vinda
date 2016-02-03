@@ -26,7 +26,7 @@ def format_size(raw_size):
 
 
 def look(root_path='.', output_path='vinda.html', ignore_list=[]):
-    env = Environment(loader=FileSystemLoader(os.path.join(os.path.dirname(__file__))))
+    env = Environment(loader=FileSystemLoader(os.path.join(os.path.dirname(__file__), 'templates')))
     template = env.get_template('template.html')
     
     link = []

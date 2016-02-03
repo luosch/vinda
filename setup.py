@@ -9,7 +9,7 @@ with open('README.rst') as f:
 setup(
     name = 'vinda',
     packages = ['vinda'],
-    version = '0.1.0',
+    version = '0.2.0',
     description = '`Help users construct their index pages rapidly',
     long_description = readme,
     author = 'Sicheng Luo',
