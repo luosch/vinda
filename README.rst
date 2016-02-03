@@ -44,6 +44,6 @@ Version 0.1.0 (2016.02.03)
 Lincense
 --------
 
-All source code is licensed under the `Hyde starter kit`_.
+All source code is licensed under the `MIT License`_.
 
 .. _MIT License: https://raw.githubusercontent.com/luosch/vinda/master/LICENSE
