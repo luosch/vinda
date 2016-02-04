@@ -40,10 +40,20 @@ Version 0.1.0 (2016.02.03)
 *   Use Jinja2 to constuct index page
 *   Only Supporting traverse in current path
 
+
 Version 0.2.0 (2016.02.03)
 --------------------------
 
 *   fix bug -> `template.html` missing 
+
+
+Version 0.3.0 (2016.02.04)
+--------------------------
+
+*   fix bug -> crash when writing index.html due to `unicode`
+*   add feature -> support recursive index page constructing
+*   refacor -> output html file must be `index.html` 
+
 
 Lincense
 --------
