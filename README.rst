@@ -52,7 +52,7 @@ Version 0.3.0 (2016.02.04)
 
 *   fix bug -> crash when writing index.html due to `unicode`
 *   add feature -> support recursive index page constructing
-*   refacor -> output html file must be `index.html` 
+*   refactor -> output html file must be `index.html` 
 
 
 Lincense
