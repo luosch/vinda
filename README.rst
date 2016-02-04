@@ -55,6 +55,12 @@ Version 0.3.0 (2016.02.04)
 *   refactor -> output html file must be `index.html` 
 
 
+Todo
+----
+
+*   add clear function
+
+
 Lincense
 --------
 
