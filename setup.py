@@ -9,7 +9,7 @@ with open('README.rst') as f:
 setup(
     name = 'vinda',
     packages = ['vinda'],
-    version = '0.3.0',
+    version = '0.3.1',
     description = '`Help users construct their index pages rapidly',
     long_description = readme,
     author = 'Sicheng Luo',
@@ -21,6 +21,9 @@ setup(
     package_data = {
         '': ['*.html'],
     },
+    install_requires = [
+        'Jinja2'
+    ],
     classifiers = [
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',

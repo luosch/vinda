@@ -44,21 +44,23 @@ Version 0.1.0 (2016.02.03)
 Version 0.2.0 (2016.02.03)
 --------------------------
 
-*   fix bug -> `template.html` missing 
+*   fix bug -> ``template.html`` missing 
 
 
 Version 0.3.0 (2016.02.04)
 --------------------------
 
-*   fix bug -> crash when writing index.html due to `unicode`
+*   fix bug -> crash when writing ``index.html`` due to ``unicode``
 *   add feature -> support recursive index page constructing
-*   refactor -> output html file must be `index.html` 
+*   refactor -> output html file must be ``index.html`` 
 
 
 Todo
 ----
 
-*   add clear function
+*   clear function
+*   avoid delete unconcerned ``index.html``
+*   pagination
 
 
 Lincense
