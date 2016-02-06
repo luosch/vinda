@@ -2,10 +2,10 @@ vinda
 =====
 
 .. image:: https://img.shields.io/pypi/v/vinda.svg
-    :target: https://pypi.python.org/pypi/vinda
+	:target: https://pypi.python.org/pypi/vinda
 
 .. image:: https://img.shields.io/pypi/dm/vinda.svg
-        :target: https://pypi.python.org/pypi/vinda.svg
+        :target: https://pypi.python.org/pypi/vinda
 
 :code:`vinda` can help user construct their index pages rapidly
 
